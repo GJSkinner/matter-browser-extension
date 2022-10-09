@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+	<div class = "predictionSection">
+		<h2 id="prediction">Prediction:</h2>
+		<h2 id="confidence">Confidence:</h2>
+		<p>
+			This prediction represents how reliable we believe the article to be. 
+			Read on to learn more about how this prediction was reached.
+		</p>
+	</div>
+	<div class = "predictionSection">
+		<h2 id = "why">Why?</h2>
+		<p>
+			We take reliability as a function of how similar an article is to known real and fake examples.
+			You'll find below the features which most influenced our prediction.
+		</p>
+	</div>
+	<div class = "metricsSection">		
+		<div class = "linguisticMetric">
+			<h3>Linguistic Score</h3>
+			<div class = "progressBar">
+				<div class = "linguisticsBar"></div>
+			</div>
+			<p>The higher the better.</p>
+		</div>
+		<div class = "networkMetric">
+			<h3>Network Score</h3>
+			<div class = "progressBar">
+				<div class = "networkBar"></div>
+			</div>
+			<p>The higher the better.</p>
+		</div>
+	</div>
+	<div class = "featureSection">		
+		<div class = "aFeature">
+			<h2 id = "feature">Feature</h2>
+			<p id = "featureDesc">Feature Description</p>
+		</div>
+		<div class = "featureValue">		
+			<svg class = "featureCircle">
+				<circle cx="31" cy="33" r="28" stroke="black" stroke-width="3" fill="none">
+					<div class = "center">
+						<h2 id = "featureScore">98</h2>
+					</div>
+				</circle>
+			</svg> 	
+		</div>
+	</div>
+	<div class = "featureSection">		
+		<div class = "aFeature">
+			<h2 id = "feature2">Feature</h2>
+			<p id = "featureDesc2">Feature Description</p>
+		</div>
+		<div class = "featureValue">		
+			<svg class = "featureCircle">
+				<circle cx="31" cy="33" r="28" stroke="black" stroke-width="3" fill="none">
+					<div class = "center">
+						<h2 id = "featureScore2">98</h2>
+					</div>
+				</circle>
+			</svg> 	
+		</div>
+	</div>
+	<div class = "predictionSection"><a href = "options.html">
+		<h2>Settings</h2>
+		<p>Customise your experience.</p>
+	</a></div>
+	<button id="runLR">Run LR</button>
+	<script src="popup.js"></script>
+	<script src="1knn.js"></script>
+	<script src="boosting.js"></script>
+	<script src="sentiment.js"></script>
+	<script src="keyword.js"></script>
+	<script src="logitreg.js"></script>
+  </body>
+</html>
+
